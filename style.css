@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+ul li {
+    list-style-type: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--dark-slate-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: 20px;
+    gap: 2rem;
+}
+/* TEXT-SECTION */
+.text-section {
+    margin: 0 2rem;
+}
+.text-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+.text-section .description {
+    margin-bottom: 2rem;
+}
+.updates li:before {
+    content: url(./assets/images/icon-list.svg);
+    margin-right: 10px;
+}
+.updates {
+    margin-bottom: 3rem;
+}
+.updates li {
+    font-size: .9rem;
+    margin-bottom: .7rem;
+}
+.label-and-error {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: .7rem;
+    margin-bottom: .5rem;
+}
+.error-message {
+    color: hsla(4, 100%, 67%, 0.793);
+    display: none;
+}
+.active {
+    display: flex;
+}
+.error {
+    background: hsla(4, 100%, 67%, 0.235);
+    color: var(--tomato);
+}
+.btn {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid var(--grey);
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+.btn::placeholder {
+    color: var(--grey);
+}
+input:focus {
+    border: 1px solid black;
+}
+.submit {
+    background: var(--dark-slate-grey);
+    color: var(--white);
+    font-weight: 700;
+    transition: all 0.1s ease-in-out;
+    border: none;
+}
+.submit:hover {
+    box-shadow: 1px 1px 10px hsl(4, 67%, 48%);
+    background: var(--tomato);
+}
+/* DESKTOP-SUCCESS */
+.desktop-success {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.desktop-success img {
+    width: 40px;
+    margin-bottom: 1.5rem;
+}
+.desktop-success h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.desktop-success .description {
+    font-size: .7rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+.desktop-success button {
+    margin-bottom: 0;
+    background-color: var(--dark-slate-grey);
+    border: none;
+    color: var(--white);
+    font-weight: 700;
+}
