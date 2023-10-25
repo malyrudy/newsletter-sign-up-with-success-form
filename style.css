@@ -31,21 +31,17 @@ body {
     padding: 1rem;
     border-radius: 20px;
     gap: 2rem;
-    width: 800px;
 }
 /* TEXT-SECTION */
 .text-section {
-    width: 40%;
     margin: 0 2rem;
 }
 .text-section h1 {
-    font-size: 2.7rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
 }
 .text-section .description {
     margin-bottom: 2rem;
-    font-size: .7rem;
-    line-height: 1.6;
 }
 .updates li:before {
     content: url(./assets/images/icon-list.svg);
@@ -55,14 +51,14 @@ body {
     margin-bottom: 3rem;
 }
 .updates li {
-    font-size: .7rem;
+    font-size: .9rem;
     margin-bottom: .7rem;
 }
 .label-and-error {
     display: flex;
     justify-content: space-between;
     font-weight: 700;
-    font-size: .6rem;
+    font-size: .7rem;
     margin-bottom: .5rem;
 }
 .error-message {
@@ -103,7 +99,6 @@ input:focus {
 }
 /* DESKTOP-SUCCESS */
 .desktop-success {
-    width: 60%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
