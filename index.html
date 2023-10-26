@@ -10,7 +10,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <!-- <div class="text-section">
+    <div class="text-section">
       <h1>Stay updated!</h1>
       <p class="description">
         Join 60,000+ product managers receiving monthly <br>updates on:
@@ -20,27 +20,28 @@
         <li>Measuring to ensure updates are a success</li>
         <li>And much more!</li>
       </ul>
-      <form action="">
+      <form>
         <div class="label-and-error">
           <label for="email">Email address</label>
           <p class="error-message">Valid email required</p>
         </div>
         <input type="email" name="email" id="email" placeholder="email@company.com" class="email-input btn">
-        <button type="submit" class="btn submit">Subscribe to monthly newsletter</button>
+        <button type="submit" class="btn submit" id="submitBtn">Subscribe to monthly newsletter</button>
       </form>
     </div>
     <div class="img-section">
       <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
-    </div> -->
-    <div class="desktop-success">
+    </div>
+    <div class="desktop-success hide">
       <img src="./assets/images/icon-success.svg" alt="icon-success">
       <h2>Thanks for <br>subscribing!</h2>
       <p class="description">
-        A confirmation email has been sent to <br><b>ash@loremcompany.com</b>. 
+        A confirmation email has been sent to <br><span class="submitted-email"><b>ash@loremcompany.com</b></span>. 
         Please open it and click <br>the button inside to confirm your subscription.
       </p>
-      <button class="btn">Dismiss message</button>
+      <button class="btn dismiss">Dismiss message</button>
     </div>
   </div>
+  <script src="./script.js"></script>
 </body>
 </html>
